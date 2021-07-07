@@ -1,0 +1,1 @@
+web: gunicorn TP_final.wsgi --log-file -
