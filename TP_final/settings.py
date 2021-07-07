@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-x_874unf7wh^+ds)66lro5o1+%&%#k1xd6f!)wbxztl=7m#7p0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["tp-final-ecommerce-django.herokuapp.com"]
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.cookie.CookieStorage"
 
