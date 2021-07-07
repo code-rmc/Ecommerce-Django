@@ -1,0 +1,22 @@
+{% extends 'layout/layout.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+{% include 'layout/admin-menu.html' %}
+
+<div class="card mt-5 mx-auto">
+    <div class="card-body">
+        <form class="formulario" role="form" action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form | crispy }}
+            <div class="mt-5">
+                <button type="submit" class="btn btn-success ">Agregar Producto</button>
+                <button type="reset" class="btn btn-danger ms-3">Borrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
